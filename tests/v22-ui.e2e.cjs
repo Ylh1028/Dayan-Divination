@@ -61,6 +61,8 @@ app.whenReady().then(async () => {
     await click('✦ 开始取卦'); await click('直接起卦'); await sleep(700); assert.equal(await count(), 0);
     await click('直接成卦'); await waitFor("!!document.querySelector('#result')"); assert.equal(await count(), 6);
     mark('自动模式直接成卦及暂停后重取无旧回调污染');
+    await begin('自动演算'); await waitFor("!!document.querySelector('#result')", 75000);
+    assert.deepEqual(await recordLines(), direct); mark('完整自动动画与固定随机直接成卦结果一致');
     await begin('手动演算'); await advance(); await click('重新取卦'); await sleep(700); assert.equal(await count(), 0); mark('手动操作锁定期间重取后状态清空');
     for (const width of [1180, 820, 390]) {
       window.setContentSize(width, 900); await sleep(100); await begin('手动演算');
