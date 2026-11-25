@@ -1,0 +1,67 @@
+{
+  "name": "dayan-divination",
+  "private": true,
+  "version": "2.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "test": "node tests/dayan.test.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "desktop:dev": "npm run build && electron desktop/main.cjs",
+    "desktop:dist": "npm run test && npm run build && electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.14",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "main": "desktop/main.cjs",
+  "build": {
+    "appId": "cn.dayanshifa.desktop",
+    "productName": "大衍筮法v2.2",
+    "directories": {
+      "output": "release-v2.2"
+    },
+    "compression": "store",
+    "files": [
+      "dist/**/*",
+      "desktop/main.cjs",
+      "package.json",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md",
+      "licenses/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "tools/llama.cpp",
+        "to": "tools/llama.cpp"
+      },
+      {
+        "from": "models/qwen3.5-2b-Q4_K_M.gguf",
+        "to": "models/qwen3.5-2b-Q4_K_M.gguf"
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Dayan-Divination-v2.2-Windows-x64-Offline.exe",
+      "icon": "build/app-icon.ico"
+    }
+  }
+}
