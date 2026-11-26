@@ -4,19 +4,16 @@
 
 网页版与 EXE 构建所需源码已公开：[浏览源码](https://github.com/Ylh1028/Dayan-Divination)。网页版仅在本地运行，不部署在线网站。
 
-## Windows EXE 完整离线版下载
+## Windows EXE 完整离线版
 
-**Windows EXE 尚未正式发布，当前没有可用的 v2.2 EXE 下载附件。源码已公开。**
+**普通 Windows x64 用户请下载：[Dayan-Divination-v2.2-Windows-x64-Offline.exe](https://github.com/Ylh1028/Dayan-Divination/releases/download/v2.2/Dayan-Divination-v2.2-Windows-x64-Offline.exe)**。
 
-计划发布位置：https://github.com/Ylh1028/Dayan-Divination/releases/tag/v2.2
+[发布说明](https://github.com/Ylh1028/Dayan-Divination/releases/tag/v2.2) · [SHA256SUMS.txt](https://github.com/Ylh1028/Dayan-Divination/releases/download/v2.2/SHA256SUMS.txt)
 
-计划附件名：`Dayan-Divination-v2.2-Windows-x64-Offline.exe`。该名称目前不是可用下载链接。
-当前沿用第三方发布的 Qwen3.5-2B Q4_K_M 文件，发布来源和上游许可见下方说明。上一候选 EXE 已获作者正常 Windows 桌面运行成功反馈；本次新增来源链接后重新构建的文件需另行验收。Codex 受限环境中的旧启动失败没有在用户环境复现，根因尚未确认，不据此认定程序有代码缺陷。严格离线、干净系统及跨设备测试尚未完成。
-发布后应在此补充实际附件地址、大小及 SHA-256，并核对正式附件与已测试产物一致。
+文件大小：1717856924 bytes；SHA-256：`4f227f6a2c4455e5345c68c2196d73e5ae3298be7020b5538c5ec447ea749339`。
+构建源码提交：`35bac44e8710def2c1da8ef83f1866f49dfb7575`；本次最终 EXE 正常 Windows 桌面验收 PASS（用户反馈）。严格断网及跨设备测试 NOT TESTED。先前 Codex 受限环境启动失败未在正常桌面复现，环境差异和底层根因尚未确认。
 
-便携 EXE 的既有使用方式：将文件放入可写文件夹，双击启动，模型由程序管理。
-使用时应保留相邻 `data` 文件夹，它保存历史与日志。升级时仅替换程序，不覆盖历史。
-完整包的目标是无需安装 Python、Node.js、Git 或在线 API；当前支持构建 Windows x64，不声称已经验证其他架构。
+下载后放到有写入权限的文件夹，双击启动；内置模型与推理引擎，无需安装 Python、Node.js 或另启模型服务。请保留用户数据目录。第三方模型来源、许可及尚未独立核实的转换记录详见本文许可说明与 `docs/MODEL.md`。
 
 ## 功能与使用
 
