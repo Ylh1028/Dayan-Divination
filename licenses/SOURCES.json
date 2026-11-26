@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-26",
+  "llamaCommit": "e1f7593c32e8dd782fc7addb908d0911260511ae",
+  "files": [
+    {
+      "file": "licenses/llama.cpp-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/LICENSE",
+      "gitBlob": "e7dca554bcb802f98408383a864404e3aa4eacca"
+    },
+    {
+      "file": "licenses/llama-jsonhpp-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/licenses/LICENSE-jsonhpp",
+      "gitBlob": "b5a10275c1cdff6d2d1b4d84f51922d42499dec5"
+    },
+    {
+      "file": "licenses/llama-cpp-httplib-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/cpp-httplib/LICENSE",
+      "gitBlob": "3e5ed359a2bb16f52c383745c25f14bb7a81c9e4"
+    },
+    {
+      "file": "licenses/llama-rotate-bits-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/hash/rotate-bits/LICENSE.md",
+      "gitBlob": "4a07c57f26755bfe13453ad4a23f8ebb8b3d3d92"
+    },
+    {
+      "file": "licenses/llama-sha256-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/hash/sha256/LICENSE",
+      "gitBlob": "950b19483ab03709fc810c59a76c24666b99dab2"
+    },
+    {
+      "file": "licenses/llama-xxhash-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/hash/xxhash/LICENSE",
+      "gitBlob": "e4c5da7234eca7baad9a46f0b144e49ccad2e500"
+    },
+    {
+      "file": "licenses/llama-miniaudio-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/miniaudio/miniaudio.h",
+      "gitBlob": "b8f61372d97c88b54b97227a5d1d60902726b8e4",
+      "excerpt": true
+    },
+    {
+      "file": "licenses/llama-stb-image-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/stb/stb_image.h",
+      "gitBlob": "9eedabedc45b3e6fd88fae6f14a160b4d53272ec",
+      "excerpt": true
+    },
+    {
+      "file": "licenses/llama-subprocess-LICENSE",
+      "source": "https://github.com/ggml-org/llama.cpp/blob/e1f7593c3/vendor/sheredom/subprocess.h",
+      "gitBlob": "67420c10356bcdad03b89d04700a598ac0c768df",
+      "excerpt": true
+    },
+    {
+      "file": "licenses/Apache-2.0.txt",
+      "source": "https://github.com/apache/.github/blob/main/LICENSE",
+      "gitBlob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "file": "licenses/Vulkan-Headers-LICENSE",
+      "source": "https://github.com/KhronosGroup/Vulkan-Headers/blob/vulkan-sdk-1.4.357.0/LICENSE.md",
+      "gitBlob": "17cf4a17d6208dad41b88124d417e0af1d29736d"
+    },
+    {
+      "file": "licenses/SPIRV-Headers-LICENSE",
+      "source": "https://github.com/KhronosGroup/SPIRV-Headers/blob/vulkan-sdk-1.4.357.0/LICENSE",
+      "gitBlob": "a63e9c620ee123267192113ab0be3814782ba909"
+    },
+    {
+      "file": "licenses/Vulkan-Headers-MIT-LICENSE",
+      "source": "https://github.com/KhronosGroup/Vulkan-Headers/blob/vulkan-sdk-1.4.357.0/LICENSES/MIT.txt",
+      "gitBlob": "8495fe9e901b430947d54980af7c77c0bb8a6221"
+    },
+    {
+      "file": "licenses/llama-binary-LICENSES.txt",
+      "source": "tools/llama.cpp/llama.exe",
+      "method": "PE 二进制中完整 License for 标题及其 NUL 结尾文本；固定 b12314 内嵌集合"
+    },
+    {
+      "file": "licenses/llama-BoringSSL-LICENSE",
+      "source": "https://github.com/google/boringssl/blob/0.20261105.0/LICENSE",
+      "gitBlob": "37a5b7439bf6d245179326da069fa561e20067ef",
+      "method": "现有二进制内嵌原文并核对官方固定版本"
+    },
+    {
+      "file": "licenses/llama-connect-LICENSES.txt",
+      "source": "tools/llama.cpp/llama-connect.exe",
+      "method": "现有 0.0.1 程序 --license 标准输出，未启用远程连接"
+    }
+  ]
+}
