@@ -212,6 +212,7 @@ function App() {
       <p>大衍筮法 v{APP_VERSION}</p>
       <p className="copyright">© 2026 寒肄｜版权所有，保留所有未明确授予的权利。<br/>本项目源码公开，仅限非商业用途。<br/>转载、修改及二次发布须保留作者署名、注明原始出处，并继续遵守非商业使用限制。</p>
       <p className="project-link">GitHub 项目地址：<a href="https://github.com/Ylh1028/Dayan-Divination" target="_blank" rel="noopener noreferrer">https://github.com/Ylh1028/Dayan-Divination</a></p>
+      <p className="project-link">第三方模型文件来源：<a href="https://huggingface.co/gguf/Qwen3.5-2B-GGUF" target="_blank" rel="noopener noreferrer">gguf/Qwen3.5-2B-GGUF（Q4_K_M）</a><br/>原始模型项目：<a href="https://huggingface.co/Qwen/Qwen3.5-2B" target="_blank" rel="noopener noreferrer">Qwen/Qwen3.5-2B</a></p>
       <p className="author-contacts"><span>QQ：2819488370</span><span>微信：Wlx04797</span><span>邮箱：2819488370@qq.com</span></p>
       <p className="custom-note">如需定制可联系</p>
     </footer>

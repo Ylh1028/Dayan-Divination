@@ -23,8 +23,10 @@ async function scenario(portInUse) {
   await new Promise(resolve => setTimeout(resolve, 20)); assert.ok(window);
   assert.equal(window.options.webPreferences.sandbox, true);
   assert.equal(window.open({ url: 'https://github.com/Ylh1028/Dayan-Divination' }).action, 'deny');
+  assert.equal(window.open({ url: 'https://huggingface.co/gguf/Qwen3.5-2B-GGUF' }).action, 'deny');
+  assert.equal(window.open({ url: 'https://huggingface.co/Qwen/Qwen3.5-2B' }).action, 'deny');
   assert.equal(window.open({ url: 'https://example.invalid' }).action, 'deny');
-  await Promise.resolve(); assert.deepEqual(opened, ['https://github.com/Ylh1028/Dayan-Divination']);
+  await Promise.resolve(); assert.deepEqual(opened, ['https://github.com/Ylh1028/Dayan-Divination', 'https://huggingface.co/gguf/Qwen3.5-2B-GGUF', 'https://huggingface.co/Qwen/Qwen3.5-2B']);
   let blocked = false; window.handlers['will-navigate']({ preventDefault() { blocked = true; } }, 'https://example.invalid'); assert.ok(blocked);
   events['before-quit']();
   assert.equal(spawned.length, portInUse ? 0 : 1);

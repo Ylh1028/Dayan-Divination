@@ -47,7 +47,7 @@ async function startLocalModel() {
 function createWindow() {
   const window = new BrowserWindow({ width: 1180, height: 900, minWidth: 820, minHeight: 680, title: '大衍筮法v2.2', icon: path.join(__dirname, '..', 'dist', 'app-icon.png'), autoHideMenuBar: true, backgroundColor: '#f5f0e8', webPreferences: { nodeIntegration: false, contextIsolation: true, sandbox: true } });
   window.webContents.setWindowOpenHandler(({ url }) => {
-    if (url === 'https://github.com/Ylh1028/Dayan-Divination') void shell.openExternal(url).catch((error) => log(`打开项目链接失败：${error.message}`));
+    if (['https://github.com/Ylh1028/Dayan-Divination', 'https://huggingface.co/gguf/Qwen3.5-2B-GGUF', 'https://huggingface.co/Qwen/Qwen3.5-2B'].includes(url)) void shell.openExternal(url).catch((error) => log(`打开来源链接失败：${error.message}`));
     return { action: 'deny' };
   });
   window.webContents.on('will-navigate', (event, url) => { if (!url.startsWith('file://')) event.preventDefault(); });
